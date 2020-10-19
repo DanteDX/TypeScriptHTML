@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TypeScript</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="./jsFiles/index.js" defer></script>
+    <script src="./jsFiles/function.js" defer></script>
+</head>
+<body>
+    <h3>Fill out the following form</h3>
+    <div class="formContents">
 
-    <body>
-        <label for="number1">Number 1: </label>
-        <input type="number" id="number1" name="number1" />
-        <label for="number2">Number 2: </label>
-        <input type="number" id="number2" name="number2" />
-        <p class="result"></p>
-        <button class="add">Add</button>
-        <button class="clear">Clear</button>
-    </body>
-    <script src="./index.js"></script>
+    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"/><br />
+        <label for="age">Age:</label>
+        <input type="number id="age" name="age" /><br />
+        <label for="skills">Skills: (Enter as string)</label>
+        <input type="text" id="skills" name="skills" />
+        <br />
+        <input type="submit" value="Submit Your Information"/>
+    </form>
+</body>
 </html>
