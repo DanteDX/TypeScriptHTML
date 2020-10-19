@@ -1,0 +1,20 @@
+React.FunctionalComponent
+React.ClassicalComponent
+React.FC
+#when I passing props, I should tell how these props should be
+event:React.FormEvent
+
+export interface sample{
+    name:string;
+    age:string;
+}
+
+useState<sample[]>()
+
+@types/react-router-dom
+
+
+..................node and express......................
+@types/nodes
+@types/express
+import express from 'express'
