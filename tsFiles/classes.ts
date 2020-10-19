@@ -15,9 +15,10 @@ abstract class Abstraction{
 class MathAndEmotions extends Abstraction  implements EmotionFunctions{
     constructor(readonly n1:number,readonly n2:number,readonly s1:string,readonly s2:string){
         super()
-
     }
+
     name = this.s1;
+
     add(n1:number,n2:number){
         return this.n1
     }
@@ -30,11 +31,9 @@ class MathAndEmotions extends Abstraction  implements EmotionFunctions{
     emotionTwo(str:string){
         return Number(this.s1);
     }
-    static  getPI(){
+    static getPI(){
         return 3.14;
     }
-
-
 }
 
 const emo1 = new MathAndEmotions(1,2,'1','1');

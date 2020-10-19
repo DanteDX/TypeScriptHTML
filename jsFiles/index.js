@@ -1,4 +1,10 @@
 "use strict";
+const form = document.forms[0];
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log(e.target.name.value);
+    console.log(e.target.age.value);
+});
 var Signature;
 (function (Signature) {
     Signature["Director"] = "Shadman";

@@ -1,3 +1,12 @@
+const form = document.forms[0]! as HTMLFormElement;
+form.addEventListener('submit',(e:Event):void=>{
+    e.preventDefault();
+    console.log(e.target.name.value);
+    console.log(e.target.age.value);
+})
+
+
+
 enum Signature {Director="Shadman", Manager="Martin", Client="Piyal"};
 
 type StringNumber = (string|number);
